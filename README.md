@@ -15,3 +15,5 @@
 3. cd dir of python file
 4. python RoDDoS.py
 5. join a roblox game and press enter in terminal
+
+![image](https://user-images.githubusercontent.com/95602665/195339381-6115baa2-1992-45f1-9fbb-d0ca6beba98b.png)
