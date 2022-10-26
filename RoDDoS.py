@@ -14,20 +14,6 @@ try:
     input(Fore.GREEN + "Press [ENTER] to start")
 except SyntaxError:
     pass
-list_of_files = glob.glob(r'C:\users\{}\AppData\Local\Roblox\logs\*'.format(username))
-latest_file = max(list_of_files, key=os.path.getctime)
-roblox_log = open(latest_file, 'r')
-
-for line in roblox_log:
-    if 'Connection accepted from' in line:
-        line = line.replace('Connection accepted from', '')
-        line2 = line.replace('|', ':')
-        line3 = line2[25:]
-        print("connected to roblox server: " + line3)
-
-        ip_history = open('server_ips.txt', 'a+')
-        ip_history.write(line3 + "\n")
-        ip_history.close()
 
 targetIP = input("input the IP addr above: ")
 targetPORT = input("input the IP PORT above: ")
