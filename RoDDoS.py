@@ -3,14 +3,12 @@ import os
 from colorama import *
 import time
 init()
-os.system("cls")
 username = os.getenv('username')
 
 
 
 print("disclaimer of liability / i am not responsable for the actions you do, this is made purely for educational purpose!")
 time.sleep(5)
-os.system("cls")
 
 try:
     input(Fore.GREEN + "Press [ENTER] to start")
@@ -35,7 +33,6 @@ targetIP = input("input the IP addr above: ")
 targetPORT = input("input the IP PORT above: ")
 threads1 = input("how many threads? : ")
 temps1 = input("set attack duration: ")
-os.system("cls")
 
 
 
